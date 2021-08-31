@@ -1,7 +1,19 @@
-h1 {
-    font-family: monospace;
-    color: peru;
-    }
-body{
-background-color: blue;
-}
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Vendors
+
+//base
+@import "base/reset" ;
+@import "base/typography" ;
+@import "base/base" ;
+
+// Layout
+
+// Components
+@import "components/buttons" ;
+
+// Pages
+
+// Theme

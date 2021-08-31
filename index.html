@@ -5,36 +5,41 @@
     <meta name="barbershop" content="barberia">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i&display=swap" rel="stylesheet">
+    <!--fonts playfair-display 900/400 y roboto 400/300-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>barbershop</title>
+    <title>Barbershop</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<header class="header">
+    <nav class="navigation navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#logonarvar">
-                <img class="logo"src="assets/img/logo.png" alt="logobarber">
-            </a>
+            <div class="logo"
+                <a class="navbar-brand" href="#logonarvar">
+                    <img class= "logo__image" src="assets/img/logo.png" alt="logo barbershop">
+                </a>
+            </div>    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse px-5 mx-5" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
+                <ul class="navigation__list navbar-nav ml-auto">
+                    <li class="navigation__item">
                         <a class="nav-link" href="#about"><label>Nosotros</label></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="navigation__item">
                         <a class="nav-link" href="#trabajo"><label>Trabajo</label></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="navigation__item">
                         <a class="nav-link" href="#blog"><label class="blog">Blog</label></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="navigation__item">
                         <a class="nav-link" href="#horas"><label>horas</label></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="navigation__item">
                         <a class="nav-link" href="#contact"><label>Contacto</label></a>
                     </li>
                 </ul>
