@@ -2,17 +2,26 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// Vendors
+// Vendor
+@import "vendor/Bootstrap4.6/bootstrap.scss";
 
 //base
 @import "base/reset" ;
 @import "base/typography" ;
 @import "base/base" ;
 
-// Layout
+//layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+@import "layout/navbar";
+//components
 
 // Components
+@import "components/infoautor";
 @import "components/buttons" ;
+@import "components/pagination";
+
 
 // Pages
 

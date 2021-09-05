@@ -1,0 +1,44 @@
+/*buttons*/
+
+//main button
+.btn {
+    margin-left: $small;
+}
+
+.btn {
+
+    background-color: $nickel;
+    border-radius: 25px;
+    font-family: $roboto;
+    font-size: $regular;
+    color: $white;
+    &:hover {
+        background-color: $light-gray;
+        color: $white;
+    }
+    &:focus {
+        background-color: $nickel;
+        border: 3px;
+        border-style: solid;
+        border-color: $light-gray;
+    }
+}
+.botoncompartir{
+    display: inline;
+    justify-content: flex-start;
+}
+.comentartwitter{
+    display: inline;
+    justify-content: flex-end;
+}
+
+.btn__normal {
+    max-width: $btn-large;
+}
+
+.btn__small {
+    max-width: $btn-small;
+}
+.page-item_siguiente{
+    border-bottom-right-radius: 20px;
+}

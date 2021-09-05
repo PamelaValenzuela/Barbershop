@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="barbershop" content="barberia">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--fonts playfair-display 900/400 y roboto 400/300-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +12,14 @@
     <title>Barbershop</title>
 </head>
 <body>
-<header class="header">
-    <nav class="navigation navbar navbar-expand-lg navbar-dark fixed-top">
+    <!--inicio header-->   
+<header class="header container-fluid">
+    <!--inicio navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5 fixed-top">
         <div class="container">
             <div class="logo"
                 <a class="navbar-brand" href="#logonarvar">
-                    <img class= "logo__image" src="assets/img/logo.png" alt="logo barbershop">
+                    <img class= "logo__image" src="assets/img/logo.png" alt="logo barbershop" width="80">
                 </a>
             </div>    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
@@ -46,23 +46,25 @@
             </div>
         </div>
     </nav>
-</header>
-<section>
-            <div class="tituloimagen">
-                <p class="container-fluid">
+
+    <section class="header__image row container-fluid">
+            <div class="titulo__imagen container-fluid">
+                <p class="imageheader__title">
                     5 formas de cuidar<br>tu corte de cabello
                 </p>
+                <img class="imageheader_image" src="assets\img\post-image.jpg">
             </div>
-            <div>
-                <img  class="imagencabecera" src="assets/img/post-image.jpg" alt="Responsive image">
-                </div>
-</section>
 
-    <div class="fecha">
+    </section>
+
+    <div class="fecha container mt-5">
         <p>12 de abril del 2018</p>
     </div>
+</header>
 
-<section class="texto1">
+<!--inicio main-->
+<main class="main">
+    <section class="container main__parrafo col-10 my-5">
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     <br>  <br>  <br>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -73,9 +75,10 @@
     <br>  <br>  <br>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-</section>
+    </section>
 
-<section>
+
+    <section class="compartir container col-10 mt-3">
     <div class="botoncompartir">
         <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
         Compartir
@@ -87,56 +90,53 @@
         </button>
     </div>
         <hr>
-</section>
-<section>
-    <div id="infornaomi" class="Naomi">
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-sm">
-                    <img class="fotonaomi" src="assets/img/naomi-thai.png" alt="naomi">
-                </div>
-                <div class="col-sm columna2">
-                    <p class="nombrenaomi"> Naomi Thai </p>
-                    <p class="twitternao">@Naothai</p>
-                    <p class="webnao">depelos.com</p>
-                </div>
-                <div id="infocontac" class="col-sm">
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<section  class="paginacion mb-0">
-    <nav class="paga" aria-label="Page navigation example">
+    <!--seccion autor-->
+    <section class="autor container">
+    <div class="autor__container row">
+        <div class="autor__thumbnail col-sm-4 col-md-3">
+            <img src="assets\img\naomi-thai.png" alt="naomi" class="autor__normal">
+        </div>
+        <div class="autor__item col-sm-4 col-md-3 m-5">
+            <h3 class="name__autor">Naomi Thai</h3>
+            <h5 class="autor__rrss">@Naomi</h5>
+            <h5 class="autor__link">depelos.com</h5>
+        </div>
+        <div class="autor__text d-none d-md-block col-4 ">
+            <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus. </p>
+        </div>
+
+    </section>
+
+<!--paginación-->
+<section id="nav-pagination">
+    <nav class="pagination-container">
         <ul class="pagination justify-content-center">
             <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                <a class="page-link" href="#">Anterior</a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Siguiente</a>
+            <li class="page-item"><a class="page-link " href="# ">1</a></li>
+            <li class="page-item active " aria-current="page ">
+                <a class="page-link " href="# ">2</a>
+            </li>
+            <li class="page-item"><a class="page-link " href="# ">3</a></li>
+            <li class="page-item page-item_siguiente">
+                <a class="page-link" href="# ">Siguiente</a>
             </li>
         </ul>
     </nav>
 </section>
 
-<footer>
-    <div class="container-fluid col-sm-12">
-        <a class="row justify-content-center">
+<!--inicio footer-->
+<footer class="footer bg-dark">
+    <div class="container-fluid ">
+        <a class="row justify-content-center bg-dark">
         <div class="footer">
             <img class="div-img" src="assets/img/logo.png" alt="Responsive">
         </div>
         </a>
 </footer>
-
-
-        <!-- bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

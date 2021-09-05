@@ -1,0 +1,33 @@
+/*.autor__name{
+    font-family: $playfair;
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+.name__autor{
+    font-weight: bold;
+    font-style: italic;
+    font-family: $playfair;
+}
+.autor__rrss,.autor__link{
+    color: $ruddy-pink;
+}
+.autor__text{
+    font-family: $roboto;
+    font-weight: $regular;
+    font-size: $small;
+    text-align: left;
+    color: $raisin-black;
+}
+/*thumbnail*/
+
+.autor__normal {
+    justify-content: center;
+    border-radius: 50%;
+    max-width: 140px;
+}
+
+.autor__small {
+    border-radius: 50%;
+    max-width: 132px;
+}
